@@ -1,0 +1,59 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="my_agenda.list">
+      <field name="name">my_agenda list</field>
+      <field name="model">my_agenda.my_agenda</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="my_agenda.action_window">
+      <field name="name">my_agenda window</field>
+      <field name="res_model">my_agenda.my_agenda</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="my_agenda.action_server">
+      <field name="name">my_agenda server</field>
+      <field name="model_id" ref="model_my_agenda_my_agenda"/>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="my_agenda" id="my_agenda.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="my_agenda.menu_1" parent="my_agenda.menu_root"/>
+    <menuitem name="Menu 2" id="my_agenda.menu_2" parent="my_agenda.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="my_agenda.menu_1_list" parent="my_agenda.menu_1"
+              action="my_agenda.action_window"/>
+    <menuitem name="Server to list" id="my_agenda" parent="my_agenda.menu_2"
+              action="my_agenda.action_server"/>
+    -->
+  </data>
+</odoo>
